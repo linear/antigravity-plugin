@@ -3,14 +3,18 @@
 ## Local installation
 
 Use an Antigravity build that supports the partner marketplace manifest format.
-Clone into a directory named `linear` to match the plugin identifier:
+Clone the repository and run the commands from its root:
 
 ```sh
-git clone https://github.com/linear/antigravity-plugin.git linear
-agy plugin validate ./linear
-agy plugin install ./linear
+git clone https://github.com/linear/antigravity-plugin.git
+cd antigravity-plugin
+agy plugin validate .
+agy plugin install .
 agy plugin list
 ```
+
+If you already have a local checkout, run `agy plugin validate .` and
+`agy plugin install .` from its root; no additional clone is needed.
 
 After installation, follow the account connection steps in [README.md](README.md).
 
@@ -34,7 +38,7 @@ because that schema rejects the additional marketplace fields.
 
 Before publishing:
 
-1. Run `agy plugin validate ./linear` and install the package with the intended
+1. Run `agy plugin validate .` and install the package with the intended
    Antigravity build. Confirm the logo, display name, and three starter prompts
    render correctly on light and dark themes.
 2. Complete a fresh Linear OAuth sign-in and verify that Linear tools appear.
