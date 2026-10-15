@@ -1,0 +1,22 @@
+{
+  "name": "linear",
+  "displayName": "Linear",
+  "version": "1.0.0",
+  "description": "The product development system for teams and agents. Manage issues, projects, and documents across your Linear workspace from Antigravity.",
+  "author": {
+    "name": "Linear",
+    "email": "support@linear.app",
+    "url": "https://linear.app"
+  },
+  "homepage": "https://linear.app/docs/mcp",
+  "repository": "https://github.com/linear/antigravity-plugin",
+  "logo": "assets/logo.svg",
+  "category": "Productivity",
+  "keywords": ["linear", "issues", "projects", "productivity"],
+  "mcpServers": "./mcp_config.json",
+  "suggestedPrompts": [
+    "Show my assigned Linear issues, grouped by priority.",
+    "Summarize recent updates to my Linear projects.",
+    "Find Linear issues related to the code I am working on."
+  ]
+}
